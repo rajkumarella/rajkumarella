@@ -2,6 +2,7 @@ package Wisecow;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WisecowApplication {
 	 public static void main(String[] args) {
@@ -9,13 +10,13 @@ public class WisecowApplication {
 	        System.setProperty("webdriver.chrome.driver", "/path/to/chromedriver");
 
 	        // Instantiate WebDriver
-	        WebDriver driver = new ChromeDriver();
+	        ChromeDriver driver = new ChromeDriver();
 
 	        // Open Wisecow application URL
 	        driver.get("http://wisecow-service:80");
 
 	        //  Selenium test logic here
-	        driver.findElemet(By.name("username")).SendKeys("xxxxx");
+	        driver.findElement(By.name("username")).sendKeys("xxxxx");
 	        driver.findElement(By.name("password")).sendKeys("xxxx");
 	        driver.findElement(By.name("login")).click();
 	        System.out.println("login completed");

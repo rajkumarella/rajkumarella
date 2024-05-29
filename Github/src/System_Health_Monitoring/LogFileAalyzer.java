@@ -3,6 +3,8 @@ package System_Health_Monitoring;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import org.openqa.selenium.chrome.ChromeDriver;
+
 public class LogFileAalyzer {
 	 public static void main(String args[]) {
 	        String applicationUrl = "http://example.com"; // Replace with your application URL
@@ -21,8 +23,10 @@ public class LogFileAalyzer {
 	                System.out.println("Application is DOWN. Status code: " + responseCode);
 	            }
 	        } catch (Exception e) {
-	            System.out.println("Application is DOWN. Exception: " + e.getMessage());
+	            System.out.println("Application is DOWN. Exception: " + e.getMessage();
+	            
+	            
 	        }
 	    }
 	}
-}
+
